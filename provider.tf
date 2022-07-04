@@ -9,5 +9,5 @@ terraform {
 
 provider "google" {
   project = "dauntless-sun-355118"
-  region  = "us-central1"
+  region  = var.region
 }

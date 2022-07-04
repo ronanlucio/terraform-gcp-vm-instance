@@ -1,7 +1,7 @@
 resource "google_compute_instance" "vm-test" {
   name         = "test"
   machine_type = "e2-micro"
-  zone         = "us-central1-a"
+  zone         = var.zone
 
   tags = ["icmp", "ssh", "web"]
 
